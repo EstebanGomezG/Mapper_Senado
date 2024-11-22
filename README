@@ -1,0 +1,97 @@
+📊 MapperVotSenado 🏛️
+¡Bienvenido a MapperVotSenado! 🎉 Este proyecto automatiza la asignación de votos a los senadores utilizando archivos CSV de votaciones y un archivo Excel principal con la información de los senadores. 🚀
+
+🗂️ Estructura del Proyecto
+
+MapperVotSenado/
+│
+├── app.py
+├── requirements.txt
+├── config/
+│   └── config.py
+├── data/
+│   ├── senadores.xlsx
+│   └── votaciones/
+│       ├── votaciones_1.csv
+│       ├── votaciones_2.csv
+│       └── ...
+├── modules/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── normalizer.py
+│   ├── mapper.py
+│   ├── vote_assigner.py
+│   └── logger.py
+└── logs/
+    └── proceso_asignacion.log
+
+🛠️ Instalación
+
+Clona el repositorio:
+git clone https://github.com/tu_usuario/MapperVotSenado.git
+cd MapperVotSenado
+
+Crea un entorno virtual (opcional pero recomendado):
+python3 -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+
+Instala las dependencias:
+pip install -r requirements.txt
+
+🚀 Uso
+Configura el archivo de configuración:
+
+Edita config/config.py para ajustar las rutas de los archivos y otras configuraciones necesarias.
+
+Prepara los datos:
+
+Asegúrate de que el archivo senadores.xlsx esté actualizado en la carpeta data/.
+Coloca todos los archivos CSV de votaciones en la carpeta data/votaciones/.
+
+Ejecuta la aplicación:
+python app.py
+
+Revisa los resultados:
+
+El archivo actualizado se guardará en data/senadores_actualizado.xlsx.
+Los logs detallados del proceso estarán en logs/proceso_asignacion.log.
+
+📦 Descripción de los Módulos
+app.py: Punto de entrada principal de la aplicación.
+requirements.txt: Lista de dependencias del proyecto.
+config/config.py: Configuraciones generales del proyecto.
+data/: Carpeta que contiene los datos de senadores y las votaciones.
+senadores.xlsx: Archivo Excel principal con la información de los senadores.
+votaciones/: Carpeta con múltiples archivos CSV de votaciones.
+modules/: Contiene los módulos reutilizables del proyecto.
+data_loader.py: Carga y preprocesa los datos.
+normalizer.py: Normaliza los nombres para facilitar las coincidencias.
+mapper.py: Mapea los nombres normalizados a las IDs de los senadores.
+vote_assigner.py: Asigna los votos al DataFrame principal.
+logger.py: Configura y maneja los logs del proceso.
+logs/: Carpeta donde se almacenan los archivos de log.
+
+📝 Contribuciones
+¡Las contribuciones son bienvenidas! 🤝 Si deseas mejorar este proyecto, por favor sigue estos pasos:
+
+Fork el repositorio.
+Crea una rama para tu feature (git checkout -b feature/nueva-funcionalidad).
+Commit tus cambios (git commit -m 'Añadir nueva funcionalidad').
+Push a la rama (git push origin feature/nueva-funcionalidad).
+Abre un Pull Request.
+
+📄 Licencia
+Este proyecto está licenciado bajo la MIT License. 📜
+
+📞 Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
+
+Email: estebangg.data@gmail.com
+LinkedIn: https://www.linkedin.com/in/estebanggdata/
+¡Gracias por usar MapperVotSenado! 🙌 Esperamos que este proyecto te sea de gran ayuda para gestionar y analizar las votaciones de los senadores de manera eficiente. 🏆
+
+
+
+
+
+
